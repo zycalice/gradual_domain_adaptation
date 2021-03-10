@@ -34,7 +34,7 @@ def run_experiment(
     if soft:
         src_tr_y = to_categorical(src_tr_y)
         src_val_y = to_categorical(src_val_y)
-        trg_eval_y = to_categorical(trg_eval_y)
+        trg_eval_y = to_categorical(trg_val_y)
         dir_inter_y = to_categorical(dir_inter_y)
         inter_y = to_categorical(inter_y)
         trg_test_y = to_categorical(trg_test_y)
