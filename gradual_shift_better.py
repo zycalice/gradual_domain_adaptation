@@ -367,7 +367,7 @@ if __name__ == "__main__":
     print("Gaussian linear experiment train longer")
     experiment_results('saved_files/gaussian_more_epochs.dat')
 
-    # Try different losses for main paper experiments
+    # YZ: Try different losses for main paper experiments
     portraits_conv_experiment_ramp()
     print("Portraits conv experiment with ramp loss")
     experiment_results('saved_files/portraits_ramp.dat')

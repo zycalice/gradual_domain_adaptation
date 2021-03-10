@@ -1,0 +1,130 @@
+
+=== portraits ===
+
+Non-adaptive accuracy and loss on source (%):  97.75999903678894 0.2531369438861316
+Non-adaptive accuracy and loss on target (%):  75.85999965667725 1.653270056968194
+Gradual self-train accuracy and loss (%):  82.59999990463257 0.7071589877389027
+Target self-train accuracy and loss (%):  78.63999843597412 1.7225272679587198
+All self-train accuracy and loss (%):  77.15999960899353 2.7267729937528604
+Best of Target self-train accuracies and loss (%):  80.1199996471405 1.080603968891273
+Best of All self-train accuracies and loss (%):  79.00000095367432 2.5034286961657175
+
+=== gaussian ===
+
+Non-adaptive accuracy and loss on source (%):  99.6999979019165 0.0
+Non-adaptive accuracy and loss on target (%):  56.46000027656555 0.2853010418611092
+Gradual self-train accuracy and loss (%):  99.59999918937683 0.08058717499630177
+Target self-train accuracy and loss (%):  48.100000619888306 0.0
+All self-train accuracy and loss (%):  96.64000153541565 0.036039680281280434
+Best of Target self-train accuracies and loss (%):  65.13999938964844 0.43047511768454144
+Best of All self-train accuracies and loss (%):  96.64000153541565 0.036039680281280434
+
+=== rot_mnist_60_conv ===
+
+Non-adaptive accuracy and loss on source (%):  97.28000044822693 0.15004653007386393
+Non-adaptive accuracy and loss on target (%):  32.769999504089355 1.3417794666605005
+Gradual self-train accuracy and loss (%):  87.69999980926514 2.557539514274029
+Target self-train accuracy and loss (%):  33.60000014305115 2.0751794660939176
+All self-train accuracy and loss (%):  36.65000021457672 1.4870651804467474
+Best of Target self-train accuracies and loss (%):  34.39999997615814 2.0978751372503
+Best of All self-train accuracies and loss (%):  37.02000021934509 1.448832906810611
+
+=== dialing_rot_mnist_60_conv ===
+
+Non-adaptive accuracy and loss on source (%):  97.28000044822693 0.15004653007386393
+Non-adaptive accuracy and loss on target (%):  32.609999775886536 1.3922176928385455
+Gradual self-train accuracy and loss (%):  27.479999661445618 2.4991659497352994
+Target self-train accuracy and loss (%):  33.55000019073486 1.8399016310065999
+All self-train accuracy and loss (%):  34.209999442100525 2.0111295393734276
+Best of Target self-train accuracies and loss (%):  34.37999963760376 1.7127921047231525
+Best of All self-train accuracies and loss (%):  35.1500004529953 1.989837881771847
+
+=== portraits_noconf ===
+
+Non-adaptive accuracy and loss on source (%):  96.98000073432922 0.12656903265620273
+Non-adaptive accuracy and loss on target (%):  72.94000029563904 0.7034750056558003
+Gradual self-train accuracy and loss (%):  81.23999953269958 2.830393713717126
+Target self-train accuracy and loss (%):  74.23999905586243 1.6407828989963706
+All self-train accuracy and loss (%):  74.29999947547913 1.5255103101762655
+Best of Target self-train accuracies and loss (%):  74.96000051498413 1.3016101165349003
+Best of All self-train accuracies and loss (%):  75.21999955177307 1.3844605901577973
+
+=== rot_mnist_60_conv_noconf ===
+
+Non-adaptive accuracy and loss on source (%):  97.28000044822693 0.15004653007386393
+Non-adaptive accuracy and loss on target (%):  32.769999504089355 1.3417794666605005
+Gradual self-train accuracy and loss (%):  77.69999980926514 2.635903991802607
+Target self-train accuracy and loss (%):  33.040000200271606 1.3710658692001902
+All self-train accuracy and loss (%):  33.47000002861023 2.0111564842870946
+Best of Target self-train accuracies and loss (%):  33.6599999666214 1.5775536627325013
+Best of All self-train accuracies and loss (%):  34.64000046253204 1.8387833157456386
+
+=== gaussian_noconf ===
+
+Non-adaptive accuracy and loss on source (%):  99.6999979019165 0.0
+Non-adaptive accuracy and loss on target (%):  56.46000027656555 0.2853010418611092
+Gradual self-train accuracy and loss (%):  99.59999918937683 0.04652702717734631
+Target self-train accuracy and loss (%):  48.100000619888306 0.0
+All self-train accuracy and loss (%):  95.95999956130981 0.21624118458809158
+Best of Target self-train accuracies and loss (%):  64.78000044822693 0.5353703096059015
+Best of All self-train accuracies and loss (%):  95.95999956130981 0.21624118458809158
+
+=== portraits_smaller_interval ===
+
+Non-adaptive accuracy and loss on source (%):  96.98000073432922 0.12656903265620273
+Non-adaptive accuracy and loss on target (%):  72.94000029563904 0.7034750056558003
+Gradual self-train accuracy and loss (%):  84.98000025749207 0.6923081872165793
+Target self-train accuracy and loss (%):  74.90000009536743 1.4058729212924088
+All self-train accuracy and loss (%):  77.06000089645386 2.196478583428804
+Best of Target self-train accuracies and loss (%):  75.21999955177307 1.5774162989332938
+Best of All self-train accuracies and loss (%):  77.41999983787537 2.216492808137437
+
+=== rot_mnist_60_conv_smaller_interval ===
+
+Non-adaptive accuracy and loss on source (%):  97.28000044822693 0.15004653007386393
+Non-adaptive accuracy and loss on target (%):  32.769999504089355 1.3417794666605005
+Gradual self-train accuracy and loss (%):  90.08999943733215 1.4734286646350845
+Target self-train accuracy and loss (%):  33.56000006198883 1.9267439241469686
+All self-train accuracy and loss (%):  35.74999988079071 1.668519876359686
+Best of Target self-train accuracies and loss (%):  33.75999987125397 1.951583344947647
+Best of All self-train accuracies and loss (%):  35.78999936580658 1.6855268822655647
+
+=== gaussian_smaller_interval ===
+
+Non-adaptive accuracy and loss on source (%):  99.6999979019165 0.0
+Non-adaptive accuracy and loss on target (%):  56.46000027656555 0.2853010418611092
+Gradual self-train accuracy and loss (%):  99.68000054359436 0.07208150872255856
+Target self-train accuracy and loss (%):  48.100000619888306 0.0
+All self-train accuracy and loss (%):  95.83999991416931 0.14416140632678598
+Best of Target self-train accuracies and loss (%):  65.13999938964844 0.43047511768454144
+Best of All self-train accuracies and loss (%):  95.83999991416931 0.14416140632678598
+
+=== portraits_more_epochs ===
+
+Non-adaptive accuracy and loss on source (%):  97.08000063896179 0.16384006568031367
+Non-adaptive accuracy and loss on target (%):  74.13999915122986 1.4375456097480264
+Gradual self-train accuracy and loss (%):  83.24000000953674 1.2227112878272244
+Target self-train accuracy and loss (%):  76.13999962806702 1.5727442800114422
+All self-train accuracy and loss (%):  78.11999917030334 1.7627771957456957
+Best of Target self-train accuracies and loss (%):  77.20000147819519 1.5982773444250178
+Best of All self-train accuracies and loss (%):  78.76000046730042 1.416305382220904
+
+=== rot_mnist_60_conv_more_epochs ===
+
+Non-adaptive accuracy and loss on source (%):  97.48000025749207 0.25228123994270735
+Non-adaptive accuracy and loss on target (%):  33.74000012874603 1.2787479127100234
+Gradual self-train accuracy and loss (%):  87.09999918937683 3.780136300528518
+Target self-train accuracy and loss (%):  35.179999470710754 1.6042925344497345
+All self-train accuracy and loss (%):  38.769999742507935 1.5081342115339682
+Best of Target self-train accuracies and loss (%):  35.99000036716461 1.4971123981333951
+Best of All self-train accuracies and loss (%):  39.21000063419342 1.6829566746234872
+
+=== gaussian_more_epochs ===
+
+Non-adaptive accuracy and loss on source (%):  99.6999979019165 0.0
+Non-adaptive accuracy and loss on target (%):  56.31999969482422 0.08579340392875087
+Gradual self-train accuracy and loss (%):  99.65999841690063 0.036039680281280434
+Target self-train accuracy and loss (%):  48.100000619888306 0.0
+All self-train accuracy and loss (%):  96.48000001907349 0.15004704604471278
+Best of Target self-train accuracies and loss (%):  65.2999997138977 0.19740138053894044
+Best of All self-train accuracies and loss (%):  96.50000095367432 0.1543147821840817
