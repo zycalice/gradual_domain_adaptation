@@ -1,0 +1,7 @@
+Non-adaptive accuracy on source (%):  99.6999979019165 0.0
+Non-adaptive accuracy on target (%):  56.31999969482422 0.08579340392875087
+Gradual self-train accuracy (%):  99.65999841690063 0.036039680281280434
+Target self-train accuracy (%):  48.100000619888306 0.0
+All self-train accuracy (%):  96.48000001907349 0.15004704604471278
+Best of Target self-train accuracies (%):  65.2999997138977 0.19740138053894044
+Best of All self-train accuracies (%):  96.50000095367432 0.1543147821840817

@@ -458,7 +458,7 @@ def rotated_mnist_60_data_func():
     (train_x, train_y), (test_x, test_y) = get_preprocessed_mnist()
     return make_rotated_dataset(
         train_x, train_y, test_x, test_y, [0.0, 5.0], [5.0, 60.0], [55.0, 60.0],
-        5000, 6000, 48000, 50000)
+        5000, 6000, 48000, 50000)  # YZ: why source_train_end and source_val_end are different?
 
 
 def rotated_mnist_60_dialing_ratios_data_func():
@@ -487,4 +487,13 @@ def gaussian_data_func(d):
         n_src_tr=500, n_src_val=1000, n_inter=5000, n_trg_val=1000, n_trg_tst=1000)
 
 
+# YZ: added no domain change version
+def rotated_mnist_0_data_func():
+    (train_x, train_y), (test_x, test_y) = get_preprocessed_mnist()
+    return make_rotated_dataset(
+        train_x, train_y, test_x, test_y, [0.0, 5.0], [0.0, 5.0], [0.0, 5.0],
+        5000, 5000, 5000, 5000)
 
+
+def portraits_0_data_func():
+    return make_portraits_data(1000, 1000, 1000, 1000, 1000, 1000)  # TODO

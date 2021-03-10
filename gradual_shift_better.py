@@ -218,7 +218,6 @@ def gaussian_linear_experiment_smaller_interval():
         soft=False, conf_q=0.1, num_runs=5, num_repeats=7)
 
 
-
 def rotated_mnist_60_conv_experiment_more_epochs():
     run_experiment(
         dataset_func=datasets.rotated_mnist_60_data_func, n_classes=10, input_shape=(28, 28, 1),
@@ -242,6 +241,77 @@ def gaussian_linear_experiment_more_epochs():
         save_file='saved_files/gaussian_more_epochs.dat',
         model_func=models.linear_softmax_model, interval=500, epochs=150, loss='ce',
         soft=False, conf_q=0.1, num_runs=5)
+
+
+# YZ: Loss ablation below with hinge loss and ramp loss.
+def rotated_mnist_60_conv_experiment_ramp():
+    run_experiment(
+        dataset_func=datasets.rotated_mnist_60_data_func, n_classes=10, input_shape=(28, 28, 1),
+        save_file='saved_files/rot_mnist_60_conv_ramp.dat',
+        model_func=models.simple_softmax_conv_model, interval=2000, epochs=10, loss='ramp',
+        soft=False, conf_q=0.1, num_runs=5)
+
+
+def portraits_conv_experiment_ramp():
+    run_experiment(
+        dataset_func=datasets.portraits_data_func, n_classes=2, input_shape=(32, 32, 1),
+        save_file='saved_files/portraits_ramp.dat',
+        model_func=models.simple_softmax_conv_model, interval=2000, epochs=20, loss='ramp',
+        soft=False, conf_q=0.1, num_runs=5)
+
+
+def gaussian_linear_experiment_ramp():
+    d = 100
+    run_experiment(
+        dataset_func=lambda: datasets.gaussian_data_func(d), n_classes=2, input_shape=(d,),
+        save_file='saved_files/gaussian_ramp.dat',
+        model_func=models.linear_softmax_model, interval=500, epochs=100, loss='ramp',
+        soft=False, conf_q=0.1, num_runs=5)
+
+
+def dialing_ratios_mnist_experiment_ramp():
+    run_experiment(
+        dataset_func=datasets.rotated_mnist_60_dialing_ratios_data_func,
+        n_classes=10, input_shape=(28, 28, 1),
+        save_file='saved_files/dialing_rot_mnist_60_conv_ramp.dat',
+        model_func=models.simple_softmax_conv_model, interval=2000, epochs=10, loss='ramp',
+        soft=False, conf_q=0.1, num_runs=5)
+
+
+def rotated_mnist_60_conv_experiment_hinge():
+    run_experiment(
+        dataset_func=datasets.rotated_mnist_60_data_func, n_classes=10, input_shape=(28, 28, 1),
+        save_file='saved_files/rot_mnist_60_conv_hinge.dat',
+        model_func=models.simple_softmax_conv_model, interval=2000, epochs=10, loss='ramp',
+        soft=False, conf_q=0.1, num_runs=5)
+
+
+def portraits_conv_experiment_hinge():
+    run_experiment(
+        dataset_func=datasets.portraits_data_func, n_classes=2, input_shape=(32, 32, 1),
+        save_file='saved_files/portraits_hinge.dat',
+        model_func=models.simple_softmax_conv_model, interval=2000, epochs=20, loss='ramp',
+        soft=False, conf_q=0.1, num_runs=5)
+
+
+def gaussian_linear_experiment_hinge():
+    d = 100
+    run_experiment(
+        dataset_func=lambda: datasets.gaussian_data_func(d), n_classes=2, input_shape=(d,),
+        save_file='saved_files/gaussian_hinge.dat',
+        model_func=models.linear_softmax_model, interval=500, epochs=100, loss='ramp',
+        soft=False, conf_q=0.1, num_runs=5)
+
+
+def dialing_ratios_mnist_experiment_hinge():
+    run_experiment(
+        dataset_func=datasets.rotated_mnist_60_dialing_ratios_data_func,
+        n_classes=10, input_shape=(28, 28, 1),
+        save_file='saved_files/dialing_rot_mnist_60_conv_hinge.dat',
+        model_func=models.simple_softmax_conv_model, interval=2000, epochs=10, loss='hinge',
+        soft=False, conf_q=0.1, num_runs=5)
+
+# YZ: No domain change below.
 
 
 if __name__ == "__main__":
@@ -296,3 +366,30 @@ if __name__ == "__main__":
     gaussian_linear_experiment_more_epochs()
     print("Gaussian linear experiment train longer")
     experiment_results('saved_files/gaussian_more_epochs.dat')
+
+    # Try different losses for main paper experiments
+    portraits_conv_experiment_ramp()
+    print("Portraits conv experiment with ramp loss")
+    experiment_results('saved_files/portraits_ramp.dat')
+    rotated_mnist_60_conv_experiment_ramp()
+    print("Rot MNIST conv experiment with ramp loss")
+    experiment_results('saved_files/rot_mnist_60_conv_ramp.dat')
+    gaussian_linear_experiment_ramp()
+    print("Gaussian linear experiment with ramp loss")
+    experiment_results('saved_files/gaussian_ramp.dat')
+    print("Dialing MNIST ratios conv experiment with ramp loss")
+    dialing_ratios_mnist_experiment_ramp()
+    experiment_results('saved_files/dialing_rot_mnist_60_conv_ramp.dat')
+
+    portraits_conv_experiment_hinge()
+    print("Portraits conv experiment with hinge loss")
+    experiment_results('saved_files/portraits_hinge.dat')
+    rotated_mnist_60_conv_experiment_hinge()
+    print("Rot MNIST conv experiment with hinge loss")
+    experiment_results('saved_files/rot_mnist_60_conv_hinge.dat')
+    gaussian_linear_experiment_hinge()
+    print("Gaussian linear experiment with hinge loss")
+    experiment_results('saved_files/gaussian_hinge.dat')
+    print("Dialing MNIST ratios conv experiment with hinge loss")
+    dialing_ratios_mnist_experiment_hinge()
+    experiment_results('saved_files/dialing_rot_mnist_60_conv_hinge.dat')
